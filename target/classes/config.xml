@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.firstEx.Amazon">
+		<property name="app">
+			<value>US POLO</value>
+		</property>
+
+		<property name="id">
+			<set>
+				<value>1</value>
+				<value>2</value>
+			</set>
+
+		</property>
+
+		<property name="items">
+			<list>
+				<value>bat</value>
+				<value>ball</value>
+				<value>wicket</value>
+
+			</list>
+
+		</property>
+
+		<property name="jeans">
+			<props>
+				<prop key="101">okay</prop>
+				<prop key="102">Notbad</prop>
+			</props>
+		</property>
+		<property name="shirt">
+			<map>
+				<entry>
+					<key>
+
+						<value>1</value>
+
+
+					</key>
+					<value>mahesh</value>
+
+				</entry>
+				<entry>
+					<key>
+						<value>2</value>
+					</key>
+					<value>okay</value>
+				</entry>
+			</map>
+
+		</property>
+	</bean>
+</beans>
